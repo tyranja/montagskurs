@@ -4,7 +4,6 @@ class User
 		@name = name
 	end
 
-
 	def name
 		@name
 	end
@@ -23,16 +22,16 @@ end
 class Email
 	def initialize(recipient, subject, body, options = {})
 		options[:sender] ||='unknown sender'  #falls kein sender da ist schreibe unknow..
-		@recipient = recipient
-		@subject = subject
-		@body = body
-		@options = options
+		@recipient 	= recipient
+		@subject 	= subject
+		@body 		= body
+		@options 	= options
 	end
 
 	def send
 		# sender = @options[:sender] || 'unknown sender'   # || or
 		puts %(sending email from "#{@options[:sender]}" to "#{@recipient}" with the subject "#{@subject}" and the "#{@body}")
-		end
+	end
 end
 
 anja = User.new('Anja')
