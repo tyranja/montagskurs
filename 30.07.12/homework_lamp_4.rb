@@ -4,7 +4,7 @@ Lamps_in_flat = [ "kitchen", "bathroom", "floor", "dining_room"]
 class Lamp
 	def initialize
 		@room = Lamps_in_flat[rand(Lamps_in_flat.length)]
-		#@room = Lamps_in_flat.sample in ruby 1.9. testen!!
+		#@room = Lamps_in_flat.sample #in ruby 1.9. testen!!
 		@bulb = "off"
 		puts
 		puts 'Hurray a new lamp in the ' + @room + '.'
