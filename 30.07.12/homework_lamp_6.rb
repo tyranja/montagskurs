@@ -1,9 +1,9 @@
-Lamps_in_flat = [ "kitchen", "bathroom", "floor", "dining_room"]
+LampsInFlat = [ "kitchen", "bathroom", "floor", "dining_room"]
 
 
 class Lamp
 	def initialize
-		@room = Lamps_in_flat[rand(Lamps_in_flat.length)]
+		@room = LampsInFlat[rand(LampsInFlat.length)]
 		#@room = Lamps_in_flat.sample #in ruby 1.9. testen!!
 		@bulb = "off"
 		@switch_count = 0
